@@ -1,0 +1,13 @@
+{
+    "DEFAULT": "कार्रवाई सफलतापूर्वक की गई",
+    "DEFAULTERR": "कार्रवाई सफलतापूर्वक की गई",
+    "DEFAULT_AUTH": "कार्रवाई सफलतापूर्वक की गई",
+    "DEFAULTAUTHERR": "कार्रवाई सफलतापूर्वक की गई",
+    "DEFAULT_INTERNAL_SERVER_ERROR": "आंतरिक सर्वर त्रुटि",
+    "REQUIRED_FIELD_VALIDATION": "कार्रवाई सफलतापूर्वक की गई",
+    "EMAIL_ALREADY_EXISTS": "कार्रवाई सफलतापूर्वक की गई",
+    "INVALIDE_ACTIVATION_CODE": "कार्रवाई सफलतापूर्वक की गई",
+    "INVALIDE_EMAIL_PASSWORD": "कार्रवाई सफलतापूर्वक की गई",
+    "EMAIL_NOT_FOUND": "कार्रवाई सफलतापूर्वक की गई",
+	"SCHEDULE_INFO": "schedule information"
+}

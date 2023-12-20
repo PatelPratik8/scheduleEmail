@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "9d80ef11-27c1-40c6-a718-803035d1f852",
+		"name": "schedule",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23197488"
+	},
+	"item": [
+		{
+			"name": "get schedule list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3200/api/schedule/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"api",
+						"schedule",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "without filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"list"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "schedule",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1377"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"561-6wNUkM0tzat8cBd7F+5us40SHmE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 11:00:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule information\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6582ba9299a1063fdc1be517\",\n                \"date\": 1702969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"success\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582badd1432827a55301388\",\n                \"date\": 1702969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"success\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582baef1432827a5530138c\",\n                \"date\": 1702969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"success\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582bb3b099e9f2d6ee51602\",\n                \"date\": 1702969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"success\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582bb56099e9f2d6ee51604\",\n                \"date\": 1702969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"success\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582bc38cd40f1fc632ca4d2\",\n                \"date\": 1702979123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"rejected\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            },\n            {\n                \"_id\": \"6582c7fb03f4136819dfb0a5\",\n                \"date\": 1704969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"schedule\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 7\n    },\n    \"messageCode\": \"SCHEDULE_INFO\"\n}"
+				},
+				{
+					"name": "with filter",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/list?status=schedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"list"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "schedule"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-Fi5eK1sbc5jCjtsGlf+tSGzGBkc\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 11:02:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule information\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6582c7fb03f4136819dfb0a5\",\n                \"date\": 1704969123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"schedule\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    },\n    \"messageCode\": \"SCHEDULE_INFO\"\n}"
+				},
+				{
+					"name": "rejected schedule",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/list?status=rejected",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"list"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "rejected"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "308"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"134-28gMcTDo3X+2Wvyyo4v/VxyClqM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 11:08:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule information\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"list\": [\n            {\n                \"_id\": \"6582bc38cd40f1fc632ca4d2\",\n                \"date\": 1702979123468,\n                \"to\": \"pratik848586@gmail.com\",\n                \"status\": \"rejected\",\n                \"emailText\": \"demo\",\n                \"subject\": \"this is testing\",\n                \"isDeleted\": false,\n                \"__v\": 0\n            }\n        ],\n        \"totalCount\": 1\n    },\n    \"messageCode\": \"SCHEDULE_INFO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "save schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"pratik848586@gmail.com\",\r\n    \"emailText\":\"demo\",\r\n    \"subject\":\"this is testing\",\r\n    \"date\":1702969123468\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3200/api/schedule",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"api",
+						"schedule"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save schedule",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"to\":\"pratik848586@gmail.com\",\r\n    \"emailText\":\"demo\",\r\n    \"subject\":\"this is testing\",\r\n    \"date\":1704969123468\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "293"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"125-g4DmJahJXmB8LZCO0U8iqdJk97E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 10:54:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule created successfully\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"date\": 1704969123468,\n        \"to\": \"pratik848586@gmail.com\",\n        \"status\": \"schedule\",\n        \"emailText\": \"demo\",\n        \"subject\": \"this is testing\",\n        \"isDeleted\": false,\n        \"_id\": \"6582c7fb03f4136819dfb0a5\",\n        \"__v\": 0\n    },\n    \"messageCode\": \"SCHEDULE_CREATE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get one schedule",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3200/api/schedule/6582bb56099e9f2d6ee51604",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"api",
+						"schedule",
+						"6582bb56099e9f2d6ee51604"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get one schedule",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/6582bb56099e9f2d6ee51604",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"6582bb56099e9f2d6ee51604"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "281"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"119-yTIs9WD+vnJLvn1Us+kejbDA37E\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 10:01:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule information\",\n    \"statusCode\": 200,\n    \"data\": {\n        \"_id\": \"6582bb56099e9f2d6ee51604\",\n        \"date\": 1702969123468,\n        \"to\": \"pratik848586@gmail.com\",\n        \"status\": \"success\",\n        \"emailText\": \"demo\",\n        \"subject\": \"this is testing\",\n        \"isDeleted\": false,\n        \"__v\": 0\n    },\n    \"messageCode\": \"SCHEDULE_INFO\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update schedule",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\":\"pratik848586@gmail.com\",\r\n    \"emailText\":\"demo\",\r\n    \"subject\":\"this is testing\",\r\n    \"date\":1704979123468\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3200/api/schedule/6582bc38cd40f1fc632ca4d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"api",
+						"schedule",
+						"6582bc38cd40f1fc632ca4d2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update schedule",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"to\":\"pratik848586@gmail.com\",\r\n    \"emailText\":\"demo\",\r\n    \"subject\":\"this is testing\",\r\n    \"date\":1704979123468\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/6582bc38cd40f1fc632ca4d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"6582bc38cd40f1fc632ca4d2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76-pwJOfISL2MK4aOnUmBgR98TRYvU\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 11:06:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule updated successfully\",\n    \"statusCode\": 200,\n    \"data\": {},\n    \"messageCode\": \"SCHEDULE_UPDATED\"\n}"
+				}
+			]
+		},
+		{
+			"name": "delete schedule",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3200/api/schedule/6582bc38cd40f1fc632ca4d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3200",
+					"path": [
+						"api",
+						"schedule",
+						"6582bc38cd40f1fc632ca4d2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete schedule",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3200/api/schedule/6582bc38cd40f1fc632ca4d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3200",
+							"path": [
+								"api",
+								"schedule",
+								"6582bc38cd40f1fc632ca4d2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "118"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"76-wpWq9716fQdDAYPX64haLhYeNL8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 20 Dec 2023 11:07:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"schedule deleted successfully\",\n    \"statusCode\": 200,\n    \"data\": {},\n    \"messageCode\": \"SCHEDULE_DELETED\"\n}"
+				}
+			]
+		}
+	]
+}

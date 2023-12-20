@@ -1,0 +1,14 @@
+{
+	"DEFAULT": "Action  performed",
+	"DEFAULTERR": "Opps! Something went wrong!!",
+	"DEFAULT_AUTH": "user is not authenticated",
+	"DEFAULTAUTHERR": "Unauthorise access",
+	"DEFAULT_INTERNAL_SERVER_ERROR": "internal server error",
+	"REQUIRED_FIELD_VALIDATION": "Required Field Validation",
+	"EMAIL_ALREADY_EXISTS": "This e-mail already exists",
+	"SCHEDULE_INFO": "schedule information",
+	"SCHEDULE_CREATE":"schedule created successfully",
+	"SCHEDULE_DELETED":"schedule deleted successfully",
+	"SCHEDULE_UPDATED":"schedule updated successfully",
+	"SCHEDULE_NOT_FOUND":"schedule email not found"
+}
